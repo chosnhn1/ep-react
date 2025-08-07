@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg';
 import TodaysPlan from './03/TodaysPlan';
 import ChildComponent from './03/ChildComponent';
 import BooleanComponent from './03/BooleanComponent';
+import ChildProperty from './03/ChildProperty';
 
 class App extends React.Component {
   render() {
@@ -39,6 +40,9 @@ class App extends React.Component {
       {/* undefined evaled as false so... */}
       <BooleanComponent bored />
       <BooleanComponent />
+      <ChildProperty>
+        <div><span>passing Child node as prop</span></div>
+      </ChildProperty>
     </div>
     );
   }
